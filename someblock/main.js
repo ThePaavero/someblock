@@ -11,15 +11,24 @@ SomeBlock = function() {
 		'dev.act',
 		'/dev/',
 		'staging/',
-		'/development/'
+		'/development/',
+		'someblock'
 	];
+
+	var dev_environment = false;
 
 	for(var i in dev_identifiers)
 	{
 		if(window.location.href.indexOf(dev_identifiers[i]) > -1)
 		{
-			return false;
+			dev_environment = true;
+			break;
 		}
+	}
+
+	if(dev_environment === false)
+	{
+		return false;
 	}
 
 	var blockees = {};
