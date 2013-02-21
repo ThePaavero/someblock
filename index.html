@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>SomeBlock</title>
+	<link rel='stylesheet' href='css.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src='someblock/main.js'></script>
+	<script src='someblock/modules/facebook.js'></script>
+	<script src='someblock/modules/twitter.js'></script>
+	<script src='someblock/modules/pinterest.js'></script>
+</head>
+<body>
+
+<section>
+	<h1>Facebook "HTML5"</h1>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/fi_FI/all.js#xfbml=1&appId=167416273338724";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like" data-href="http://example.com" data-send="true" data-width="450" data-show-faces="true"></div>
+</section>
+
+<section>
+	<h1>Facebook "XFBML"</h1>
+	<fb:like href="http://example.com" send="true" width="450" show_faces="true"></fb:like>
+</section>
+
+<section>
+	<h1>Facebook "XFBML" 2</h1>
+	<fb:like href="http://example.com" send="true" width="450" show_faces="true"></fb:like>
+</section>
+
+<section>
+	<h1>Facebook iframe</h1>
+	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexample.com&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=80&amp;appId=167416273338724" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+</section>
+
+<section>
+	<h1>Facebook share link</h1>
+	<p>
+		<a href='http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexample.com&send=false&layout=standard&width=450&show_faces=true&font&colorscheme=light&action=like&height=80&appId=167416273338724'>Share this on Facebook!</a>
+	</p>
+</section>
+
+<section>
+	<h1>Twitter "Share a link"</h1>
+	<p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="Peksi">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+</section>
+
+<section>
+	<h1>Twitter "Hashtag"</h1>
+	<p>
+		<a href="https://twitter.com/intent/tweet?button_hashtag=TwitterStories" class="twitter-hashtag-button" data-related="Peksi">Tweet #TwitterStories</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+</section>
+
+<section>
+	<h1>Twitter "Mention"</h1>
+	<p>
+		<a href="https://twitter.com/intent/tweet?screen_name=Peksi" class="twitter-mention-button" data-related="Peksi">Tweet to @Peksi</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+</section>
+
+<section>
+	<h1>Pinterest "Pin it button"</h1>
+	<p>
+		<a data-pin-config="above" href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+	</p>
+</section>
+
+<section>
+	<h1>Pinterest "Follow button"</h1>
+	<p>
+		<a data-pin-do="buttonFollow" href="http://pinterest.com/pinterest/">Pinterest</a>
+		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+	</p>
+</section>
+
+</body>
+</html>

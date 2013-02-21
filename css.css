@@ -1,0 +1,13 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}table{border-collapse:separate;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}table,td,th{vertical-align:top;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"""";}a img{border:none;}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}audio:not([controls]){display:none;}[hidden]{display:none;}@media only screen and(max-width:960px){}.wrapper{display:inline-block;}.wrapper:after{content:".";display:block;height:0;clear:both;visibility:hidden;}*html.wrapper{height:1%;}.wrapper{display:block;}.clear{clear:both;}.custom_message{position:absolute;position:fixed;top:0px;left:0px;padding:10px;text-align:center;font-size:12px;width:100%;cursor:pointer;box-shadow:0px 1px 3px 0px#000;}.custom_message p{padding:0;margin:0;}.custom_message.positive{background:#d1f3d2;border:solid 1px#aacbac;}.custom_message.neutral{background:#e8e8e8;border:solid 1px#cacaca;}.custom_message.negative{background:#f4c3c3;border:solid 1px#ce9292;}
+
+body {
+	font-family: Arial;
+	font-size: 14px;
+}
+section {
+	padding: 40px;
+}
+section h1 {
+	padding-bottom: 20px;
+	font-size: 20px;
+}
