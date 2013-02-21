@@ -7,6 +7,21 @@ window.SomeBlock = {};
 
 SomeBlock = function() {
 
+	var dev_identifiers = [
+		'dev.act',
+		'/dev/',
+		'staging/',
+		'/development/'
+	];
+
+	for(var i in dev_identifiers)
+	{
+		if(window.location.href.indexOf(dev_identifiers[i]) > -1)
+		{
+			return false;
+		}
+	}
+
 	var blockees = {};
 
 	this.init = function()
