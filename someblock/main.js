@@ -84,7 +84,7 @@ SomeBlock = function() {
 			'left'       : $(el).offset().left,
 			'width'      : $(el).width(),
 			'height'     : $(el).height(),
-			'background' : 'red',
+			// 'background' : 'red',
 			'z-index'    : 9000,
 			'opacity'    : 0.8
 		});
@@ -93,7 +93,7 @@ SomeBlock = function() {
 
 		$(blocker).click(function()
 		{
-			alert('Blocked');
+			alert('Sharing is blocked while in development');
 			return false;
 		});
 	};
